@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.Vector2;
 public class FoodEat extends FoodParent{
     private Vector2 tmp;
     private int CountEat=0, CountDoubleFood=0;
-    private int ChanceDoubleFood = 700;
+    private int ChanceDoubleFood = 400;
 
     public FoodEat(String nameTexture,float x,float y) {
         super(nameTexture,x,y);
@@ -41,11 +41,11 @@ public class FoodEat extends FoodParent{
             Counter++;
         }
 
-        font.draw(batch,"Food.Eat = " + CountEat, 50, 360);
-        font.draw(batch,"Food.Bingo! = " + CountDoubleFood, 50, 340);
-        font.draw(batch,"F.Chance = " + (double)CountDoubleFood/CountEat, 50, 320);
-        font.draw(batch,"F.pos.x = " + getPosition().x, 50, 300);
-        font.draw(batch,"F.pos.y = " + getPosition().y, 50, 280);
+        //font.draw(batch,"Food.Eat = " + CountEat, 50, 360);
+        //font.draw(batch,"Food.Bingo! = " + CountDoubleFood, 50, 340);
+        //font.draw(batch,"F.Chance = " + (double)CountDoubleFood/CountEat, 50, 320);
+        //font.draw(batch,"F.pos.x = " + getPosition().x, 50, 300);
+        //font.draw(batch,"F.pos.y = " + getPosition().y, 50, 280);
     }
 
     @Override

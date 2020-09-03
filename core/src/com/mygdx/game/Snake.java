@@ -123,8 +123,8 @@ public class Snake {
         {
             batch.draw(piece,body[i].position.x,body[i].position.y);
         }
-        font.draw(batch,"Snake.N = " + EndSnake, 50, 400);
-        font.draw(batch,"Snake.Speed = " + getSpeed(), 50, 380);
+        font.draw(batch,"Length: " + EndSnake, 600, 570);
+        //font.draw(batch,"Snake.Speed = " + getSpeed(), 50, 380);
         //font.draw(batch,"EndPos.X = " + body[EndSnake-1].getPosition().x, 50, 400);
         //font.draw(batch,"EndPos.Y = " + body[EndSnake-1].getPosition().y, 50, 380);
         font.draw(batch, "Score: " + Score,600,550);

@@ -108,22 +108,13 @@ public class GameScreen implements Screen {
         Gdx.gl.glClearColor(1, 1, 1, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        //delete
         stateTime += Gdx.graphics.getDeltaTime();
         TextureRegion currentFrame = walkAnimation.getKeyFrame(stateTime,true);
-        //delete
-
         game.batch.begin();
         game.batch.draw(backgroundGameTexture,0,0);
-
-        //delete
         game.batch.draw(currentFrame,575,430);
-        //delete
-
         foodEat.render(game.batch, game.font);
         snake.render(game.batch,game.font);
-
-
         game.batch.end();
         SoundManager();
         update();
